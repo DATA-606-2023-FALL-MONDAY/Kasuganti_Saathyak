@@ -6,11 +6,11 @@ Prepared for UMBC Data Science Master Degree Capstone by Dr Chaojie (Jay) Wang
 
 **Author Name:** Saathyak Rao Kasuganti
 
-**GitHub:** 
+**GitHub:** https://github.com/SaathyakUMBC/Portfolio_Projects
 
 **LinkedIn:** https://www.linkedin.com/in/saathyak-rao-kasuganti-241440190/
 
-**PowerPoint presentation file:** 
+**PowerPoint presentation file:** https://github.com/DATA-606-2023-FALL-MONDAY/Kasuganti_Saathyak/blob/main/docs/Project_power_point.pptx
 
 **Link to your YouTube video:** 
     
