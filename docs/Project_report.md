@@ -114,3 +114,94 @@ Some of the critical research questions that the project seeks to answer are:
 6. Drop any last remaining rows with NaN values, and cross-check for missing values to verify. Now we end up with a data frame that still has 12k+ rows and no null values.
 
 7. Finally, before starting the pre-processing for the ML models, we use OneHotEncoder for converting the categorical data to be able to use for various machine learning models.
+
+## 5. Feature Engineering: Encoding features and feature selection:
+### Categorical Data Encoding and Feature Selection Analysis
+
+- **Encoding Categorical Data:**
+  - Utilized OneHotEncoder to transform categorical data, resulting in 80 individual features instead of the original 25 columns.
+
+- **Feature Selection Techniques:**
+  - To select relevant features for categorical data, considered techniques such as Chi2 or Recursive Feature Elimination (RFE).
+
+- **RFE Technique Application:**
+  - Applied RFE to choose the 20 most important features for the analysis.
+
+- **Effect on Random Forests Accuracy:**
+  - Despite selecting the top 20 features using RFE, the accuracy of the Random Forests algorithm decreased compared to using all 80 encoded features.
+
+- **Accuracy Variation with Feature Count:**
+  - Experimented with different feature counts (5, 10, 20, 25, 40, 50, 65), but the accuracy only approached the original accuracy of 74% and did not surpass it.
+
+- **Limited Performance Improvement:**
+  - Concluded that feature selection did not significantly enhance performance, particularly in the context of a dataset composed entirely of categorical variables.
+
+- **Model Complexity and Performance:**
+  - Observed a direct proportional relationship between the complexity of the models and their performance. Reducing the number of features may result in a loss of crucial information for the Random Forests algorithm, affecting predictive accuracy.
+
+
+## 6.  Machine Learning Models Performance Evaluation:
+
+- **Primary Metric for Comparison of Model Performance:** F1 Scores of Individual Binary Classes.
+- **Secondary Metric for Comparison of Model Performance:** Overall Model Accuracy.
+
+### Model Performance Summary
+
+| Model                   | F1 Score (Class 0) | F1 Score (Class 1) | Accuracy |
+|-------------------------|---------------------|---------------------|----------|
+| Gradient Boosting Model | 0.71                | 0.79                | 0.757    |
+| SVM Model (Poly Kernel)  | 0.70                | 0.79                | 0.750    |
+| Random Forests          | 0.68                | 0.78                | 0.743    |
+| SVM Model (RBF Kernel)   | 0.68                | 0.78                | 0.735    |
+| Decision Tree Model     | 0.64                | 0.74                | 0.700    |
+| Ada Boost               | 0.62                | 0.74                | 0.690    |
+
+### Why Gradient Boosting Model is Chosen:
+
+1. **High Accuracy:**
+   - The Gradient Boosting Model demonstrated the highest accuracy of 75.7% among all models tested, making it the most reliable choice for making coupon recommendations.
+
+2. **Balanced F1 Scores:**
+   - With competitive F1 scores for both Class 0 and Class 1 (0.71 and 0.79, respectively), the model shows an ability to effectively identify both successful and unsuccessful recommendations.
+
+3. **Interpretability:**
+   - The model is relatively interpretable, allowing you to understand how it makes predictions. This transparency is essential for trust and compliance in recommendation systems.
+
+4. **Ensemble Learning:**
+   - By combining the strength of multiple weak learners through boosting, the model reduces overfitting, effectively captures complex patterns in the data, and enhances prediction performance.
+
+### How Gradient Boosting Model Outperforms Others:
+
+1. **Ensemble Learning:**
+   - The ensemble nature of the Gradient Boosting Model allows it to harness the collective wisdom of many weaker models, reducing variance and improving model performance.
+
+2. **Reduced Overfitting:**
+   - Gradient Boosting's ability to handle overfitting effectively results in a more reliable model when compared to other models that might suffer from high variance.
+
+3. **Generalization Capability:**
+   - The model demonstrates excellent generalization, indicating that it's better at making accurate recommendations on unseen data or new users.
+
+
+## 7. Project Findings and Conclusion
+
+1. **Feature Significance**
+   - Connecting with research question 1, it is observed that all features play a crucial role in coupon acceptance. Feature selection experiments, including iterations with varying feature counts, showed that excluding features decreased model performance.
+
+2. **Weather Influence on Coupon Acceptance**
+   - Connecting with research question 1, weather conditions significantly impact coupon acceptance. Coupons have a higher chance of acceptance during sunny weather, with a slightly higher chance of rejection during snowy or rainy weather.
+
+3. **Gender and Coupon Acceptance**
+   - Addressing research question 2, both men and women generally have a higher chance of accepting coupons. However, a deeper analysis reveals that, when comparing acceptance and rejection cases (y=1 and y=0), men tend to accept slightly more often than women.
+
+4. **Age and Coupon Acceptance**
+   - Addressing research question 2, age plays a crucial role in coupon acceptance. Customers aged 21-31 show a very high chance of acceptance, gradually fading as age approaches 50. Customers above 50 have an equal chance of accepting or rejecting coupons. This insight suggests that food coupons should primarily target customers in their 20s for higher success rates.
+
+5. **Major take-aways:**
+- These insights collectively aid in devising targeted marketing strategies, personalized campaigns, sales initiatives, and advertisements.
+- The predictive model, with an accuracy of 75.7%, offers valuable real-time insights for business owners. 
+- It serves as a practical accuracy for marketing purposes, considering the inherent unpredictability associated with human decision-making.
+- Acknowledging the limitations, such as the influence of human 'free will' and 'mental state,' this level of accuracy is deemed highly effective for a marketing-focused use-case.
+
+## This level of accuracy is particularly significant in a marketing context, where precision in targeting specific demographics and scenarios is crucial for campaign success.
+
+
