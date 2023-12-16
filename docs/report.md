@@ -12,7 +12,7 @@ Prepared for UMBC Data Science Master Degree Capstone by Dr Chaojie (Jay) Wang
 
 **PowerPoint presentation file:** https://github.com/DATA-606-2023-FALL-MONDAY/Kasuganti_Saathyak/blob/main/docs/Project_power_point.pptx
 
-**Link to your YouTube video:** 
+**Link to your YouTube video:** https://youtu.be/LTwmpIrmWYU
     
 ## 2. Background
 
