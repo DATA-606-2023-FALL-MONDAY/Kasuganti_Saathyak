@@ -1,4 +1,4 @@
-## 1. Title and Author
+![image](https://github.com/DATA-606-2023-FALL-MONDAY/Kasuganti_Saathyak/assets/60375529/d500f2a9-0f9a-43e8-8604-71c48254bf05)## 1. Title and Author
 
 **Project Title:** In-Vehicle Coupon Recommendation System Using Machine Learning
 
@@ -8,7 +8,7 @@ Prepared for UMBC Data Science Master Degree Capstone by Dr Chaojie (Jay) Wang
 
 **Semester** Fall 2023
 
-**GitHub:** https://github.com/SaathyakUMBC/Portfolio_Projects
+**GitHub:** https://github.com/Saathyak/portfolio_projects
 
 **LinkedIn:** https://www.linkedin.com/in/saathyak-rao-kasuganti-241440190/
 
@@ -205,5 +205,7 @@ Some of the critical research questions that the project seeks to answer are:
 - Acknowledging the limitations, such as the influence of human 'free will' and 'mental state,' this level of accuracy is deemed highly effective for a marketing-focused use-case.
 
 ## This level of accuracy is particularly significant in a marketing context, where precision in targeting specific demographics and scenarios is crucial for campaign success.
+
+
 
 
