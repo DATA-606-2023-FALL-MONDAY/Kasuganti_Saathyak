@@ -165,6 +165,8 @@ Some of the critical research questions that the project seeks to answer are:
 
 2. **Balanced F1 Scores:**
    - With competitive F1 scores for both Class 0 and Class 1 (0.71 and 0.79, respectively), the model shows an ability to effectively identify both successful and unsuccessful recommendations.
+   - ![image](https://github.com/DATA-606-2023-FALL-MONDAY/Kasuganti_Saathyak/assets/60375529/17ccb076-cc8c-43d8-af45-df1ef1876dc9)
+
 
 3. **Interpretability:**
    - The model is relatively interpretable, allowing you to understand how it makes predictions. This transparency is essential for trust and compliance in recommendation systems.
@@ -191,12 +193,18 @@ Some of the critical research questions that the project seeks to answer are:
 
 2. **Weather Influence on Coupon Acceptance**
    - Connecting with research question 1, weather conditions significantly impact coupon acceptance. Coupons have a higher chance of acceptance during sunny weather, with a slightly higher chance of rejection during snowy or rainy weather.
+   - ![image](https://github.com/DATA-606-2023-FALL-MONDAY/Kasuganti_Saathyak/assets/60375529/2f91b7f4-f83e-43e1-aa1c-aa9242787ab7)
+
 
 3. **Gender and Coupon Acceptance**
    - Addressing research question 2, both men and women generally have a higher chance of accepting coupons. However, a deeper analysis reveals that, when comparing acceptance and rejection cases (y=1 and y=0), men tend to accept slightly more often than women.
+   - ![image](https://github.com/DATA-606-2023-FALL-MONDAY/Kasuganti_Saathyak/assets/60375529/9bceb6e1-9040-4775-aa66-d0539194a77e)
+
 
 4. **Age and Coupon Acceptance**
    - Addressing research question 2, age plays a crucial role in coupon acceptance. Customers aged 21-31 show a very high chance of acceptance, gradually fading as age approaches 50. Customers above 50 have an equal chance of accepting or rejecting coupons. This insight suggests that food coupons should primarily target customers in their 20s for higher success rates.
+   - ![image](https://github.com/DATA-606-2023-FALL-MONDAY/Kasuganti_Saathyak/assets/60375529/982832cc-803a-4737-877c-38b37ec77132)
+
 
 5. **Major take-aways:**
 - These insights collectively aid in devising targeted marketing strategies, personalized campaigns, sales initiatives, and advertisements.
